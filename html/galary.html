@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEEE Gallery - Amity University Patna</title>
+  <link rel="stylesheet" href="../css/gallary.css">
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./team.html">Executive Committee</a></li>
+      <li><a href="./achievement.html">Achievements</a></li>
+      <li><a href="./event.html">Events</a></li>
+      <li><a href="./gallery.html" class="active">Gallery</a></li>
+      <li><a href="./contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Heading -->
+  <section class="gallery-heading" data-animate>
+    <h1>IEEE Gallery</h1>
+    <p>Memorable events, activities, and achievements of IEEE Amity University Patna Student Branch.</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-container">
+    <div class="gallery-grid">
+      <!-- Sample Images -->
+      <div class="gallery-item" data-animate>
+        <img src="../images/gallary/gallary1.jpg" alt="Gallery Image 1" onclick="openLightbox(this)">
+      </div>
+      <div class="gallery-item" data-animate>
+        <img src="../images/gallary/gallary2.jpg" alt="Gallery Image 2" onclick="openLightbox(this)">
+      </div>
+      <div class="gallery-item" data-animate>
+        <img src="../images/gallary/gallary3.jpg" alt="Gallery Image 3" onclick="openLightbox(this)">
+      </div>
+      <div class="gallery-item" data-animate>
+        <img src="../images/gallary/gallary4.jpg" alt="Gallery Image 4" onclick="openLightbox(this)">
+      </div>
+      <div class="gallery-item" data-animate>
+        <img src="../images/gallary/gallary5.jpg" alt="Gallery Image 5" onclick="openLightbox(this)">
+      </div>
+      <div class="gallery-item" data-animate>
+        <img src="../images/gallary/gallary6.JPG" alt="Gallery Image 6" onclick="openLightbox(this)">
+      </div>
+      <div class="gallery-item" data-animate>
+        <img src="../images/gallary/gallary7.JPG" alt="Gallery Image 7" onclick="openLightbox(this)">
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="caption" id="caption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h2 class="footer-logo"><i class="fas fa-bolt"></i> IEEE AUP</h2>
+        <p>
+          IEEE Student Branch of Amity University Patna is dedicated to fostering innovation, collaboration, and excellence in engineering and technology.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="#events"><i class="fas fa-angle-right"></i> Events</a></li>
+          <li><a href="#team"><i class="fas fa-angle-right"></i> Our Team</a></li>
+          <li><a href="#gallery"><i class="fas fa-angle-right"></i> Gallery</a></li>
+          <li><a href="#join"><i class="fas fa-angle-right"></i> Join IEEE</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> ieee@amity.edu</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-map-marker-alt"></i> Amity University Patna, Bihar, India</p>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 IEEE – Amity University Patna. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="../js/gallary.js"></script>
+  <script src="../js/particles-config.js"></script>
+</body>
+</html>

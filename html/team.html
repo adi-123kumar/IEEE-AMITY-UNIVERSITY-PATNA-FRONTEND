@@ -1,103 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IEEE Student Branch - Amity University Patna</title>
+  <title>Executive Committee | IEEE Student Branch - Amity University Patna</title>
   <link rel="stylesheet" href="../css/team.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-  <header>
-    <h1>IEEE Student Branch</h1>
-    <p>Amity University Patna</p>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="team.html" class="active">Executive Committee</a></li>
+      <li><a href="achievement.html">Achievements</a></li>
+      <li><a href="event.html">Events</a></li>
+      <li><a href="galary.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero" data-aos="fade-down">
+    <h1>Executive Committee</h1>
+    <p class="tagline">IEEE Student Branch | Amity University Patna</p>
   </header>
 
-  <section class="committee-grid">
-    <!-- Executive Members -->
-    <div class="member-card">
-      <img src="../images/members/aaravpal.jpg" alt="Chairperson">
-      <h3>Aarav Pal</h3>
-      <p>Chairperson</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="member-card">
-      <img src="../images/members/kaushikprakash.jpg" alt="Vice Chairperson">
-      <h3>Kaushik Prakash</h3>
-      <p>Vice Chairperson</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="member-card">
-      <img src="../images/members/shikhasingh.jpg" alt="Treasurer">
-      <h3>shikhasingh </h3>
-      <p>Treasurer</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="member-card">
-      <img src="../images/members/ruchisingh.jpg" alt="Secretary">
-      <h3>ruchisingh </h3>
-      <p>Secretary</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="member-card">
-      <img src="../images/members/adityakumar.jpg" alt="Webmaster">
-      <h3>Aditya Kumar</h3>
-      <p>Webmaster</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
+  <!-- Committee Grid -->
+  <section class="team-section container">
+    <h2 class="section-title" data-aos="fade-up">Meet Our Leaders</h2>
+    <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
+      Dedicated students & faculty driving innovation and excellence
+    </p>
 
-    <!-- Faculty Members -->
-    <div class="member-card">
-      <img src="../images/members/naveensir.jpg" alt="Faculty Advisor">
-      <h3>Prof. Dr. Naveen Kumar</h3>
-      <p>Faculty Advisor</p>
-    </div>
-    <div class="member-card">
-      <img src="../images/members/shakshimam.JPG" alt="Faculty Coordinator">
-      <h3>Prof. Dr. shakshi</h3>
-      <p>Faculty Coordinator</p>
-    </div>
+    <div class="team-grid">
+      <!-- Student Members -->
+      <div class="team-member" data-aos="zoom-in">
+        <img src="../images/members/aaravpal.jpg" alt="Chairperson">
+        <h3>Aarav Pal</h3>
+        <p>Chairperson</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
-    <!-- HOD -->
-    <div class="member-card">
-      <img src="../images/members/hodimage.JPG" alt="HOD">
-      <h3>Prof. Dr. Rashmi Shekher</h3>
-      <p>HOD, AIIT Department</p>
-    </div>
+      <div class="team-member" data-aos="zoom-in" data-aos-delay="100">
+        <img src="../images/members/kaushikprakash.jpg" alt="Vice Chairperson">
+        <h3>Kaushik Prakash</h3>
+        <p>Vice Chairperson</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
-    <!-- Vice Chancellor -->
-    <div class="member-card">
-      <img src="../images/members/vcsirimage.JPG" alt="Vice Chancellor">
-      <h3>Prof. Dr. Ashok Chauhan</h3>
-      <p>Vice Chancellor, Amity University Patna</p>
+      <div class="team-member" data-aos="zoom-in" data-aos-delay="200">
+        <img src="../images/members/shikhasingh.jpg" alt="Treasurer">
+        <h3>Shikha Singh</h3>
+        <p>Treasurer</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="team-member" data-aos="zoom-in" data-aos-delay="300">
+        <img src="../images/members/ruchisingh.jpg" alt="Secretary">
+        <h3>Ruchi Singh</h3>
+        <p>Secretary</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="team-member" data-aos="zoom-in" data-aos-delay="400">
+        <img src="../images/members/adityakumar.jpg" alt="Webmaster">
+        <h3>Aditya Kumar</h3>
+        <p>Webmaster</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Faculty Members -->
+      <div class="team-member" data-aos="fade-up">
+        <img src="../images/members/naveensir.jpg" alt="Faculty Advisor">
+        <h3>Prof. Dr. Naveen Kumar</h3>
+        <p>Faculty Advisor</p>
+      </div>
+
+      <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+        <img src="../images/members/shakshimam.JPG" alt="Faculty Coordinator">
+        <h3>Prof. Dr. Shakshi</h3>
+        <p>Faculty Coordinator</p>
+      </div>
+
+      <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+        <img src="../images/members/hodimage.JPG" alt="HOD">
+        <h3>Prof. Dr. Rashmi Shekher</h3>
+        <p>HOD, AIIT Department</p>
+      </div>
+
+      <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+        <img src="../images/members/vcsirimage.JPG" alt="Vice Chancellor">
+        <h3>Prof. Dr. Ashok Chauhan</h3>
+        <p>Vice Chancellor, Amity University Patna</p>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 IEEE Student Branch | Amity University Patna</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h2 class="footer-logo"><i class="fas fa-bolt"></i> IEEE AUP</h2>
+        <p>
+          IEEE Student Branch of Amity University Patna is dedicated to fostering innovation, collaboration, and excellence in engineering and technology.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="#events"><i class="fas fa-angle-right"></i> Events</a></li>
+          <li><a href="#team"><i class="fas fa-angle-right"></i> Our Team</a></li>
+          <li><a href="#gallery"><i class="fas fa-angle-right"></i> Gallery</a></li>
+          <li><a href="#join"><i class="fas fa-angle-right"></i> Join IEEE</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> ieee@amity.edu</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-map-marker-alt"></i> Amity University Patna, Bihar, India</p>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 IEEE – Amity University Patna. All Rights Reserved.</p>
+    </div>
   </footer>
-</body>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="../js/team.js"></script>
+</body>
 </html>

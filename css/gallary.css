@@ -1,0 +1,273 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: #0d1117;
+  overflow-x: hidden;
+}
+
+/* Particle Background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #00c3ff;
+}
+
+/* Heading */
+.gallery-heading {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.gallery-heading h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #00c3ff;
+  animation: fadeInDown 1.5s ease;
+}
+
+.gallery-heading p {
+  font-size: 1.1rem;
+  color: #ddd;
+  animation: fadeInUp 2s ease;
+}
+
+/* Gallery Layout */
+.gallery-container {
+  padding: 40px 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Lightbox Modal */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.lightbox-content {
+  max-width: 80%;
+  max-height: 80%;
+  animation: zoomIn 0.5s;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.caption {
+  margin-top: 15px;
+  color: #ccc;
+}
+
+/* Scroll Animations */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+[data-animate].active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keyframes */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.footer-container {
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (max-width: 460px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========== Footer ========== */
+.footer {
+  background: rgba(0, 0, 0, 0.82);
+  padding: 48px 0 26px;
+  margin-top: 52px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.footer-col h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.footer-logo {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.footer p {
+  color: var(--text-dim);
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  margin: 6px 0;
+}
+
+.footer-col a {
+  color: var(--text);
+  text-decoration: none;
+  opacity: .9;
+  transition: color .25s ease, opacity .25s ease;
+}
+
+.footer-col a:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.footer-socials a {
+  color: #fff;
+  opacity: .9;
+  transition: color .25s ease, transform .25s ease, opacity .25s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 22px;
+  color: var(--text-dim);
+  font-size: .95rem;
+}

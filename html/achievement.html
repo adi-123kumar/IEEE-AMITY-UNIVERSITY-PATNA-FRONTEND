@@ -1,100 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>IEEE Achievements</title>
-  <link rel="stylesheet" href="../css/achievement.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="../css/achievement.css" />
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Font Awesome (keep your original kit for existing 'fas' icons) -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-  <header class="header">
-    <h1>Our Achievements</h1>
-    <p>IEEE Student Branch - Amity University Patna</p>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navbar (content unchanged) -->
+  <div class="navbar">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="team.html">Executive Committee</a></li>
+      <li><a href="achievement.html" class="active">Achievements</a></li>
+      <li><a href="event.html">Events</a></li>
+      <li><a href="galary.html">Gallary</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Header -->
+  <header class="header hero" data-aos="fade-down">
+    <div class="container">
+      <h1>Our Achievements</h1>
+      <p class="tagline">IEEE Student Branch - Amity University Patna</p>
+    </div>
   </header>
 
-  <section class="counters">
-    <div class="counter-box">
-      <i class="fas fa-users"></i>
-      <h2 class="counter" data-target="150">0</h2>
-      <p>Active Members</p>
-    </div>
-    <div class="counter-box">
-      <i class="fas fa-lightbulb"></i>
-      <h2 class="counter" data-target="25">0</h2>
-      <p>Events Conducted</p>
-    </div>
-    <div class="counter-box">
-      <i class="fas fa-trophy"></i>
-      <h2 class="counter" data-target="10">0</h2>
-      <p>Awards Won</p>
-    </div>
-  </section>
-
-  <section class="highlights">
-    <h2>Highlights</h2>
-    <div class="highlight-grid">
-      <div class="highlight-card">
-        <i class="fas fa-chalkboard-teacher"></i>
-        <h3>Workshops</h3>
-        <p>Conducted 10+ technical workshops on AI, IoT, and Web Development.</p>
+  <!-- Counters -->
+  <section class="counters section" data-aos="fade-up">
+    <div class="container counters-wrap">
+      <div class="counter-box">
+        <i class="fas fa-users"></i>
+        <h2 class="counter" data-target="150">0</h2>
+        <p>Active Members</p>
       </div>
-      <div class="highlight-card">
-        <i class="fas fa-globe"></i>
-        <h3>IEEE Day 2024</h3>
-        <p>Successfully hosted IEEE Day with 300+ participants and guests from industries.</p>
+      <div class="counter-box">
+        <i class="fas fa-lightbulb"></i>
+        <h2 class="counter" data-target="25">0</h2>
+        <p>Events Conducted</p>
       </div>
-      <div class="highlight-card">
-        <i class="fas fa-robot"></i>
-        <h3>Robotics Challenge</h3>
-        <p>Organized inter-college robotics challenge encouraging innovation and teamwork.</p>
+      <div class="counter-box">
+        <i class="fas fa-trophy"></i>
+        <h2 class="counter" data-target="10">0</h2>
+        <p>Awards Won</p>
       </div>
     </div>
   </section>
 
-  <section class="gallery">
-    <h2>Moments Captured</h2>
-    <div class="gallery-grid">
-      <img src="images/event1.jpg" alt="Event 1">
-      <img src="images/event2.jpg" alt="Event 2">
-      <img src="images/event3.jpg" alt="Event 3">
+  <!-- Highlights -->
+  <section class="highlights section" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Highlights</h2>
+      <div class="highlight-grid">
+        <div class="highlight-card" data-aos="zoom-in">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>Workshops</h3>
+          <p>Conducted 10+ technical workshops on AI, IoT, and Web Development.</p>
+        </div>
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-globe"></i>
+          <h3>IEEE Day 2024</h3>
+          <p>Successfully hosted IEEE Day with 300+ participants and guests from industries.</p>
+        </div>
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-robot"></i>
+          <h3>Robotics Challenge</h3>
+          <p>Organized inter-college robotics challenge encouraging innovation and teamwork.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="achievements-section">
-  <h2 class="section-title">Our Achievements</h2>
-  <div class="achievements-grid">
-    <div class="achievement-card">
-      <img src="images/achievement1.jpg" alt="Workshop on AI">
-      <h3><i class="fas fa-brain"></i> AI Workshop</h3>
-      <p>Organized a hands-on workshop on Artificial Intelligence with over 150 participants.</p>
+  <!-- Gallery -->
+  <section class="gallery section" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Moments Captured</h2>
+      <div class="gallery-grid">
+        <img src="../images/events/event1.jpg" alt="Event 1" />
+        <img src="../images/events/event2.jpg" alt="Event 2" />
+        <img src="../images/events/event3.jpg" alt="Event 3" />
+      </div>
     </div>
+  </section>
 
-    <div class="achievement-card">
-      <img src="images/achievement2.jpg" alt="IEEE Day">
-      <h3><i class="fas fa-bolt"></i> IEEE Day Celebration</h3>
-      <p>Celebrated IEEE Day with technical events, quizzes, and innovation showcases.</p>
+  <!-- Achievements Cards (content unchanged) -->
+  <section class="achievements-section section" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Our Achievements</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card" data-aos="fade-up">
+          <img src="../images/events/airobotics.jpg" alt="Workshop on AI" />
+          <h3><i class="fas fa-brain"></i> AI Workshop</h3>
+          <p>Organized a hands-on workshop on Artificial Intelligence with over 150 participants.</p>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="../images/events/event1.jpg" alt="IEEE Day" />
+          <h3><i class="fas fa-bolt"></i> IEEE Day Celebration</h3>
+          <p>Celebrated IEEE Day with technical events, quizzes, and innovation showcases.</p>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="../images/events/hackerthonimage.png" alt="Hackathon" />
+          <h3><i class="fas fa-code"></i> Inter-College Hackathon</h3>
+          <p>Hosted a 24-hour Hackathon with participation from 12 colleges and 50+ teams.</p>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="../images/events/reasearch.jpg" alt="Research Publications" />
+          <h3><i class="fas fa-book"></i> Research Publications</h3>
+          <p>IEEE Student members published 8+ research papers in reputed journals and conferences.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="achievement-card">
-      <img src="images/achievement3.jpg" alt="Hackathon">
-      <h3><i class="fas fa-code"></i> Inter-College Hackathon</h3>
-      <p>Hosted a 24-hour Hackathon with participation from 12 colleges and 50+ teams.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h2 class="footer-logo"><i class="fas fa-bolt"></i> IEEE AUP</h2>
+        <p>
+          IEEE Student Branch of Amity University Patna is dedicated to fostering innovation, collaboration, and excellence in engineering and technology.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="#events"><i class="fas fa-angle-right"></i> Events</a></li>
+          <li><a href="#team"><i class="fas fa-angle-right"></i> Our Team</a></li>
+          <li><a href="#gallery"><i class="fas fa-angle-right"></i> Gallery</a></li>
+          <li><a href="#join"><i class="fas fa-angle-right"></i> Join IEEE</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> ieee@amity.edu</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-map-marker-alt"></i> Amity University Patna, Bihar, India</p>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
     </div>
-
-    <div class="achievement-card">
-      <img src="images/achievement4.jpg" alt="Research Publications">
-      <h3><i class="fas fa-book"></i> Research Publications</h3>
-      <p>IEEE Student members published 8+ research papers in reputed journals and conferences.</p>
+    <div class="footer-bottom">
+      <p>&copy; 2025 IEEE – Amity University Patna. All Rights Reserved.</p>
     </div>
-  </div>
-</section>
-
-
-  <footer>
-    <p>&copy; 2025 IEEE Student Branch | Amity University Patna</p>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="../js/achievement.js"></script>
 </body>
 </html>

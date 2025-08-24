@@ -1,4 +1,4 @@
-// Particles.js Background
+// ================= Particles Background =================
 particlesJS("particles-js", {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -28,10 +28,10 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 
-// AOS (Scroll Animations)
+// ================= AOS (Scroll Animations) =================
 AOS.init({
   duration: 1000,
-  once: false,
+  once: false, // animate every time it enters viewport
   offset: 80,
   easing: "ease-out-cubic",
 });
